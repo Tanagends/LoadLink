@@ -95,7 +95,8 @@ body{
 .main-title{
     text-align: center;
     color:var(--col-2);
-    margin-top: 70px;
+    position: relative;
+    top: 20px;
 }
 
 .hero {
