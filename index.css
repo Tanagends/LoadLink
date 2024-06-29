@@ -1,0 +1,121 @@
+@import './../bootstrap-icons/font/bootstrap-icons.css';
+
+*{
+    --col-1: #25AFF3;
+    --col-2: #0084D0;
+    --col-3: #4C95E4;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 5px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*Navbar and Sidebar*/
+.nabvar{
+    display: flex;
+}
+
+.nav-items, .loadlink, .side-items {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: ease .6s;
+
+    &:hover{
+        font-size: .9rem;
+        background: rgba(255, 255, 255, 0.192);
+    }
+}
+.nav-items{
+    color: black;
+}
+.loadlink{
+    margin-right: auto;
+    color: black;
+    text-transform: uppercase;
+}
+
+.sidebar {
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    right: 0;
+    top: 0;
+    background: var(--col-2);
+    color: white;
+    padding-top: 20px;
+    transition: ease-in 1s;
+    .loadlink{
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+.side-items{
+    color: white;
+    padding: 20px 10px;
+    border-width: 1px 0px;
+    border-color: white;
+    border-style: solid; 
+}
+.sidebar-hide{
+    transform: translateX(100%);
+}
+.sidebar-show{
+    transform: translate(0);
+}
+
+.mobile-show {
+ display: none;
+}
+.mobile-hide{
+    display: block;
+}
+
+@media (max-width: 840px) {
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-show{
+        display: block;
+    }
+}
+
+.main-title{
+    text-align: center;
+    color:var(--col-3);
+}
+
+.hero {
+    width: 350px;
+    margin: 10px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    .punchline{
+        text-align: center;
+    }
+    button{
+        margin :5px auto;
+        font-size: larger;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        background-color: var(--col-3);
+        border: none;
+        border-radius: 10px;
+        display: block;
+        transition: ease .3s;
+        &:hover{
+            background-color: var(--col-1);
+            box-shadow: 0px 1px 3px 1px black;
+        }
+        &:active{
+            scale: .9;
+        }
+    }
+}

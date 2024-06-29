@@ -4,44 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoadLink</title>
+    <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <button><a href="./index.html">Home</a></button>
-            <button><a href="#">What We Do</a></button>
-            <button><a href="#">Why Us?</a></button>
-            <button><a href="#">Our Vision</a></button>
-            <button><a href="#">The Team</a></button>
-            <button><a href="#">Contact Us</a></button>
+    <header class="header">
+        <nav class="nabvar">
+            <a href="#" class="loadlink">Loadlink</a>
+            <a class="nav-items mobile-hide" href="./index.html">Home</a>
+            <a class="nav-items mobile-hide" href="#what-we-do">What We Do</a>
+            <a class="nav-items mobile-hide" href="#mission">Our Mission</a>
+            <a class="nav-items mobile-hide" href="#vision">Our Vision</a>
+            <a class="nav-items mobile-hide" href="#team">The Team</a>
+            <a class="nav-items mobile-hide" href="#contact">Contact Us</a>
+            <a href="#" class="nav-items mobile-show"><i class="bi bi-house-fill"></i></a>
+            <a href="#" onclick="handleMenu()" class="nav-items mobile-show"><i class="bi bi-menu-button-wide-fill"></i></a>
+        </nav>
+        <nav class="sidebar sidebar-hide" id="sidebar">
+            <a href="#" class="loadlink">Loadlink</a>
+            <a href="" class="side-items" onclick="handleMenu()"><i class="bi bi-chevron-right"></i></a>
+            <a class="side-items" href="#what-we-do">What We Do</a>
+            <a class="side-items" href="#mission">Our Mission</a>
+            <a class="side-items" href="#vision">Our Vision</a>
+            <a class="side-items" href="#team">The Team</a>
+            <a class="side-items" href="#contact">Contact Us</a>
         </nav>
     </header>
-    <main>
-        <h1>LoadLink</h1>
-        <p>Connect your loads with truck transporters swiftly, 
-            at low costs, and on a conveniently digitalized platform.
-        </p>
-        <h1>What we do</h1>
-        <p>
-            We bridge the gap between business loads and transportation means, trucks, optimizing
-            for the lowest business costs and efficient truck routing.
-            <br>
-            As such, both, businesses and truck owners can use LoadLink to skyrocket their efficiency in a 
-            future-esque fashion.
-            <h2>For Businesses with transportation needs</h2>
-            <p>
-                Businesses lower down their transportation overheads with just the click of a button. They gain 
-                valuable AI match-up recommendations: factoring in their budget, load type, truck availability—and 
-                reliability across several metrics—destination and several other considerations that fine-tune to your 
-                unique needs. They can manage and track loads in real time, and exploit cost-efficient compound
-                loads by a single transporter whose route satisfies other outside loads.
+    <main class="main">
+        <h1 class="main-title">LoadLink</h1>
+        <!-- hero section -->
+        <section class="hero">
+            <p class="punchline">Connect your loads with truck transporters swiftly, 
+                at low costs, and on a conveniently digitalized platform.
             </p>
+            <button type="button">Get Started</button>
+        </section>
+        <!-- registration links -->
+        <section class="registration">
+            <h3>Register as</h3>
+            <div class="reg-cont">
+                <a class="reg-link">
+                    <span class="bi bi-"></span>
+                    <h4>Company</h4>
+                </a>
+            </div>
+\        </section>
+        <!-- what we do -->
+        <section>
+            <article class="article what-we-do" id="#what-we-do">
+                <h1 class="title">What <i class="title-inside">We Do</i></h1>
+                <p class="main-paragraph">
+                    We bridge the gap between business loads and transportation means, trucks, optimizing
+                    for the lowest business costs and efficient truck routing.
+                    <br />
+                    As such, both, businesses and truck owners can use LoadLink to skyrocket their efficiency in a 
+                    future-esque fashion.
+                    <h3 class="mini-title">For Businesses with transportation needs</h3>
+                    <p clas="mini-paragraph">
+                        Businesses lower down their transportation overheads with just the click of a button. They gain 
+                        valuable AI match-up recommendations: factoring in their budget, load type, truck availability—and 
+                        reliability across several metrics—destination and several other considerations that fine-tune to your 
+                        unique needs. They can manage and track loads in real time, and exploit cost-efficient compound
+                        loads by a single transporter whose route satisfies other outside loads.
+                    </p>
+                    <h3 class="mini-title">For Truck owners and other transport providers</h3>
+                    <ul class="list">
+                        <li class="list-item">Increased visibility and demand</li>
+                        <li class="list-item">Optimized routes and loads</li>
+                        <li class="list-item">streamlined operations</li>
+                        <li class="list-item">Imporoved cash flow</li>
+                        <li class="list-item">Access to data insights</li>
+                        <li class="list-item">Better communication and support</li>
+                        <li class="list-item">Cost Savings</li>
+                    </ul>
+                </p>
+            </article>
+            <!-- mission -->
+            <article class="article mission" id="mission">
+                <h1 class="title">Our <i class="title-inside">Mission</i></h1>
+                <p class="mini-paragraph">
+                    Our mission is to make transportation simpler, smarter, and more accessible for all,
+                    while creating a positive impact on the enviroment and the communities we serve.
+                </p>
+            </article>
+            <!-- vision -->
+            <article class="article vision" id="vision">
+                <h1 class="title">Our <i class="title-inside">Vision</i></h1>
+                <p>
+                    Our Vision at LoadLink is to revolutionize the logistics industry by creating a seamless and efficient
+                    platform that connects truck owners with clients, fostering a reliable, cost-effictive, and sustainable
+                    transportation ecosystem. We aim to:
+                </p>
+                <ul class="list">
+                    <li class="list-items">Empower truck owners to maximize their capacity and revenue</li>
+                    <li class="list-items">Provide clients with a streamlined and transparent shipping experience</li>
+                    <li class="list-items">Drive innovation and sustainability in the industry through technology and data insights</li>
+                    <li class="list-items">Build a community of trust, reliability, and collaboration between all stackholders</li>
+                </ul>
+            </article>
+        </section>
+        <!-- contact us -->
+        <section class="contact-us" id="contact">
+            
+        </section>
 
-            <h2>For Truck owners and other transport providers</h2>
-            <p>
-                Transporters
-            </p>
-        </p>
     </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-cont">
+            <h3 class="footer-title">Loadlink</h3>
+            <p class="footer-p">For all your transport services</p>
+        </div>
+        <div id="footer-links" class="footer-cont">
+            <h3 class="footer-title bi bi-phone">Connect with us</h3>
+        </div>
+        <div class="footer-cont">
+            <h3 class="footer-title bi bi-geo-alt">Location</h3>
+            <p class="footer-p">Harare, Zimbabwe</p>
+        </div>
+        <p class="copyright" id="copyright"><p>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
