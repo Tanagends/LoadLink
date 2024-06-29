@@ -75,3 +75,13 @@ const handleMenu = ()=> {
         sidebar.className = 'sidebar sidebar-hide';
     }
 }
+
+
+const addForm = document.getElementById('footer');
+const form = document.getElementById('form');
+addForm.removeChild(form);
+
+const getStarted = (action) => {
+    if(action == 'true') addForm.appendChild(form);
+    if(action == 'false' || action == "cancel" || action == "submit") addForm.removeChild(form);
+}

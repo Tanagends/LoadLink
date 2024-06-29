@@ -9,28 +9,26 @@
 <body>
     <header class="header">
         <nav class="nabvar">
-            <a href="#" class="loadlink">Loadlink</a>
-            <a class="nav-items mobile-hide" href="./index.html">Home</a>
+            <a class="loadlink">Loadlink</a>
+            <a class="nav-items mobile-hide" href="#main-title">Home</a>
             <a class="nav-items mobile-hide" href="#what-we-do">What We Do</a>
             <a class="nav-items mobile-hide" href="#mission">Our Mission</a>
             <a class="nav-items mobile-hide" href="#vision">Our Vision</a>
-            <a class="nav-items mobile-hide" href="#team">The Team</a>
             <a class="nav-items mobile-hide" href="#contact">Contact Us</a>
-            <a href="#" class="nav-items mobile-show"><i class="bi bi-house-fill"></i></a>
-            <a href="#" onclick="handleMenu()" class="nav-items mobile-show"><i class="bi bi-menu-button-wide-fill"></i></a>
+            <a href="#main-title" class="nav-items mobile-show"><i class="bi bi-house-fill"></i></a>
+            <a onclick="handleMenu()" class="nav-items mobile-show"><i class="bi bi-menu-button-wide-fill"></i></a>
         </nav>
         <nav class="sidebar sidebar-hide" id="sidebar">
-            <a href="#" class="loadlink">Loadlink</a>
-            <a href="" class="side-items" onclick="handleMenu()"><i class="bi bi-chevron-right"></i></a>
+            <a class="loadlink">Loadlink</a>
+            <a class="side-items" onclick="handleMenu()"><i class="bi bi-chevron-right"></i></a>
             <a class="side-items" onclick="handleMenu()" href="#what-we-do">What We Do</a>
             <a class="side-items" onclick="handleMenu()" href="#mission">Our Mission</a>
-            <a class="side-items" onclick="handleMenu()" href="#vision">Our Vision</a>
-            <a class="side-items" onclick="handleMenu()" href="#team">The Team</a>
+            <a class="side-items" onclick="handleMenu()" href="#vision"> Our Vision</a>
             <a class="side-items" onclick="handleMenu()" href="#contact">Contact Us</a>
         </nav>
     </header>
     <main class="main">
-        <h1 class="main-title">LoadLink</h1>
+        <h1 class="main-title" id="main-title">LoadLink</h1>
         <!-- hero section -->
         <section class="hero slide-in">
             <div class=" hero-title-cont">
@@ -38,7 +36,7 @@
                 <h1 class="slide-in hero-title second">with</h1>
                 <h1 class="slide-in hero-title third">truck transporters</h1>
              </div>
-            <button type="button">Get Started</button>
+            <button type="button" onclick="getStarted('true')">Get Started</button>
         </section>
         <!-- registration links -->
         <section class="registration">
@@ -117,10 +115,9 @@
             <h1 class="title">Contact <i class="title-inside">Us</i></h1>
             <div id="contact" class="contacts-here"></div>
         </section>
-
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-cont">
             <h3 class="footer-title">Loadlink</h3>
             <p class="footer-p">For all your transport services</p>
@@ -134,7 +131,16 @@
             <p class="footer-p">Harare, Zimbabwe</p>
         </div>
         <p class="copyright" id="copyright"><p>
-    </footer>
+            <form action="#" id="form" class="form">
+                <h2 class="form-title">Sign Up</h2>
+                <input type="text" name="name" id="name" class="name form-input" placeholder="Username">
+                <input type="text" name="email" id="email" class="email form-input" placeholder="Email">
+                <div class="form-buttons">
+                    <button type="submit" onclick="getStarted('submit')" class="form-button form-submit">Submit</button>
+                    <button type="button" onclick="getStarted('cancel')" class="form-button form-cancel">Cancel</button>
+                </div>
+            </form>
+        </footer>
     <script src="./index.js"></script>
 </body>
 </html>

@@ -16,6 +16,12 @@ body{
 /*Navbar and Sidebar*/
 .nabvar{
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 3px 1px black;
 }
 
 .nav-items, .loadlink, .side-items {
@@ -302,5 +308,53 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+.form{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 1px 3px 1px #0084D0;
+    width: 300px;
+    .form-buttons{
+        display: flex;
+    }
+    .form-title{
+        text-align: center;
+        color: #0084D0;
+    }
+    .form-input{
+        width: 90%;
+        padding: 5px;
+        outline: none;
+    }
+    .form-buttons{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+    }
+    .form-button{
+        padding: 5px;
+        color: white;
+        border: none;
+        display: block;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .form-submit{
+        background-color: #0084D0;
+    }
+    .form-cancel{
+        background-color: orangered;
     }
 }
