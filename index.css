@@ -248,6 +248,9 @@ body{
             text-align: center;
             display: block;
         }
+        p{
+            font-size: .8rem;
+        }
     }
 }
 
