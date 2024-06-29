@@ -42,9 +42,10 @@ contacts.map((item) => {
     //rendering items on the contact us page
     let contContainer = document.createElement('div');
     contContainer.id = item.id;
+    contContainer.className = 'article cont-container';
     let linkContainer = document.createElement('a');
     let detailContainer = document.createElement('div');
-    let link = document.createElement('h3');
+    let link = document.createElement('p');
     link.innerHTML = item.link;
     let name = document.createElement('h1');
     name.innerHTML = item.name;

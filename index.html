@@ -22,29 +22,39 @@
         <nav class="sidebar sidebar-hide" id="sidebar">
             <a href="#" class="loadlink">Loadlink</a>
             <a href="" class="side-items" onclick="handleMenu()"><i class="bi bi-chevron-right"></i></a>
-            <a class="side-items" href="#what-we-do">What We Do</a>
-            <a class="side-items" href="#mission">Our Mission</a>
-            <a class="side-items" href="#vision">Our Vision</a>
-            <a class="side-items" href="#team">The Team</a>
-            <a class="side-items" href="#contact">Contact Us</a>
+            <a class="side-items" onclick="handleMenu()" href="#what-we-do">What We Do</a>
+            <a class="side-items" onclick="handleMenu()" href="#mission">Our Mission</a>
+            <a class="side-items" onclick="handleMenu()" href="#vision">Our Vision</a>
+            <a class="side-items" onclick="handleMenu()" href="#team">The Team</a>
+            <a class="side-items" onclick="handleMenu()" href="#contact">Contact Us</a>
         </nav>
     </header>
     <main class="main">
         <h1 class="main-title">LoadLink</h1>
         <!-- hero section -->
-        <section class="hero">
-            <p class="punchline">Connect your loads with truck transporters swiftly, 
-                at low costs, and on a conveniently digitalized platform.
-            </p>
+        <section class="hero slide-in">
+            <div class=" hero-title-cont">
+                <h1 class="slide-in hero-title first">Connect your loads</h1>
+                <h1 class="slide-in hero-title second">with</h1>
+                <h1 class="slide-in hero-title third">truck transporters</h1>
+             </div>
             <button type="button">Get Started</button>
         </section>
         <!-- registration links -->
         <section class="registration">
-            <h3>Register as</h3>
+            <h3 class="title">Register as a</h3>
             <div class="reg-cont">
-                <a class="reg-link">
-                    <span class="bi bi-"></span>
+                <a class="reg-link"href="#">
+                    <span class="bi bi-building-fill"></span>
                     <h4>Company</h4>
+                </a>
+                <a class="reg-link"href="#">
+                    <span class="bi bi-person-vcard-fill"></span>
+                    <h4>Driver</h4>
+                </a>
+                <a class="reg-link"href="#">
+                    <span class="bi bi-person-fill"></span>
+                    <h4>Client</h4>
                 </a>
             </div>
 \        </section>
@@ -103,8 +113,9 @@
             </article>
         </section>
         <!-- contact us -->
-        <section class="contact-us" id="contact">
-            
+        <section class="contact-us">
+            <h1 class="title">Contact <i class="title-inside">Us</i></h1>
+            <div id="contact" class="contacts-here"></div>
         </section>
 
     </main>
@@ -114,8 +125,9 @@
             <h3 class="footer-title">Loadlink</h3>
             <p class="footer-p">For all your transport services</p>
         </div>
-        <div id="footer-links" class="footer-cont">
+        <div class="footer-cont">
             <h3 class="footer-title bi bi-phone">Connect with us</h3>
+            <div id="footer-links" class="footer-links-cont"></div>
         </div>
         <div class="footer-cont">
             <h3 class="footer-title bi bi-geo-alt">Location</h3>
